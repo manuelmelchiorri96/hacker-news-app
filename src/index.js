@@ -1,6 +1,7 @@
 import axios from "axios";
 import _ from "lodash";
 import "./css/styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class ApplicazioneHackerNews {
   constructor() {

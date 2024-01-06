@@ -1,5 +1,5 @@
 body {
-    padding-top: 56px;
+    padding-top: 50px;
     background-color: #f8f9fa;
 }
 
@@ -7,9 +7,14 @@ body {
     background-color: #343a40;
 }
 
+.navbar .navbar-brand {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
 .hero {
     position: relative;
-    height: 150px;
+    height: 200px;
     background-color: #343a40;
     color: #fff;
     text-align: center;
@@ -39,6 +44,6 @@ body {
 }
 
 #elenco-news {
-    max-height: 420px;
+    max-height: 400px;
     overflow-y: auto;
 }
