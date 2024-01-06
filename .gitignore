@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# Build files
+dist/
+bundle.js
+bundle.js.map
+
+# Log files
+npm-debug.log*
+
+# Editor directories and files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+
+# Dependency directories
+.jest/
+
+# OS directories
+.DS_Store
+Thumbs.db

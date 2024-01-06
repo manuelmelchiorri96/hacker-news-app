@@ -1,0 +1,44 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.hero {
+    position: relative;
+    height: 150px;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+#indicatore-caricamento {
+    display: none;
+}
+
+.list-group-item a {
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+#elenco-news {
+    max-height: 420px;
+    overflow-y: auto;
+}

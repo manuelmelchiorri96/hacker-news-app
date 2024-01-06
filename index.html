@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Applicazione Hacker News</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <span class="navbar-brand mb-0 h1">Hacker News</span>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Benvenuto su Hacker News</h1>
+            <p>Scopri le ultime notizie e aggiornamenti dalla comunità Hacker News.</p>
+        </div>
+    </div>
+
+    <main class="container mt-5">
+        <div id="elenco-news" class="list-group"></div>
+        <div id="indicatore-caricamento" class="text-center mt-3">
+            <div class="spinner-border text-dark" role="status">
+                <span class="sr-only">Caricamento...</span>
+            </div>
+            <p class="mt-2">Caricamento...</p>
+        </div>
+        <button id="carica-altro" class="w-100 btn btn-dark">Mostra altre news</button>
+    </main>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <span class="text-muted">© 2024 Applicazione Hacker News</span>
+        </div>
+    </footer>
+
+
+    <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>
