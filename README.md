@@ -58,4 +58,4 @@ Benvenuto nella Hacker News App! Questa è un'applicazione JavaScript avanzata c
 
 ## Licenza
 
-Questo progetto è concesso in licenza secondo i termini di [LICENSE.txt](LICENSE.txt).
+Questo progetto è distribuito sotto la [GNU General Public License v3.0](./LICENSE). Vedere il file `LICENSE` per ulteriori informazioni.
