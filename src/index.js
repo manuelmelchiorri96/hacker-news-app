@@ -4,7 +4,8 @@ import "./css/styles.css";
 
 class ApplicazioneHackerNews {
   constructor() {
-    this.apiURL = "https://hacker-news.firebaseio.com/v0/";
+    axios.defaults.baseURL = "https://hacker-news.firebaseio.com/v0/";
+    this.apiURL = axios.defaults.baseURL;
     this.elencoNews = document.querySelector("#elenco-news");
     this.pulsanteCaricaAltro = document.querySelector("#carica-altro");
     this.indiceAttualeNews = 0;
@@ -45,11 +46,11 @@ class ApplicazioneHackerNews {
       );
 
       // Ordino le notizie utilizzando Lodash
-      const sortedBatchNews = _.sortBy(batchNews);
+      const sortedBatchNews = _.sortBy(batchNews, (id) => -id);
 
       // Carico i dettagli di ogni notizia nel batch
       await Promise.all(
-        sortedBatchNews.map((id) => this.caricaDettagliNews(id))
+        _.map(sortedBatchNews, async (id) => await this.caricaDettagliNews(id))
       );
 
       // Aggiorno l'indice attuale delle notizie
@@ -66,7 +67,10 @@ class ApplicazioneHackerNews {
 
   // Mostro i dettagli di una notizia nell'interfaccia utente utilizzando Lodash
   mostraDettagliNews(dettagliNews) {
-    const titoloFormattato = _.upperFirst(_.toLower(dettagliNews.title));
+    const titoloFormattato = _.chain(dettagliNews.title)
+      .toLower()
+      .capitalize()
+      .value();
     const elementoNews = document.createElement("a");
 
     elementoNews.href = dettagliNews.url;
