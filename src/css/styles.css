@@ -1,25 +1,22 @@
-body {
-    padding-top: 50px;
-    background-color: #f8f9fa;
-}
-
 .navbar {
     background-color: #343a40;
 }
 
 .navbar .navbar-brand {
+    text-align: left;
     margin-left: 30px;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .hero {
     position: relative;
-    height: 200px;
+    height: 30vh;
     background-color: #343a40;
     color: #fff;
     text-align: center;
     display: flex;
     align-items: center;
+    padding-top: 50px;
 }
 
 .hero h1 {
@@ -44,6 +41,10 @@ body {
 }
 
 #elenco-news {
-    max-height: 400px;
+    max-height: 40vh;
     overflow-y: auto;
+}
+
+footer{
+    height: 20vh;
 }
