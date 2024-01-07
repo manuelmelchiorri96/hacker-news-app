@@ -16,7 +16,7 @@
     text-align: center;
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .hero h1 {
@@ -45,6 +45,6 @@
     overflow-y: auto;
 }
 
-footer{
+footer {
     height: 20vh;
 }
