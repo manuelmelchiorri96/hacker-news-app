@@ -68,7 +68,8 @@ class ApplicazioneHackerNews {
 
   // Mostro i dettagli di una notizia nell'interfaccia utente utilizzando Lodash
   mostraDettagliNews(dettagliNews) {
-    const titoloFormattato = _.chain(dettagliNews.title)
+    const titoloOriginale = _.get(dettagliNews, "title", "");
+    const titoloFormattato = _.chain(titoloOriginale)
       .toLower()
       .capitalize()
       .value();
